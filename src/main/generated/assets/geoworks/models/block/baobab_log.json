@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "geoworks:block/baobab_log_top",
+    "side": "geoworks:block/baobab_log_side"
+  }
+}

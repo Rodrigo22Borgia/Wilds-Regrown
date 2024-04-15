@@ -1,0 +1,44 @@
+{
+	"schemaVersion": 1,
+	"id": "geoworks",
+	"version": "${version}",
+	"name": "GeoWorks",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/geoworks/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"fabric-datagen": [
+			"com.rodrigo.GeoWorksDataGenerator"
+		],
+		"main": [
+			"com.rodrigo.GeoWorks"
+		],
+		"client": [
+			"com.rodrigo.GeoWorksClient"
+		]
+	},
+	"mixins": [
+		"geoworks.mixins.json",
+		{
+			"config": "geoworks.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.15.7",
+		"minecraft": "~1.20.0",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}

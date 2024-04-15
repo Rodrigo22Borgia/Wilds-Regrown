@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "geoworks:block/mangrove_log",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "geoworks:block/mangrove_log"
+    },
+    "axis=z": {
+      "model": "geoworks:block/mangrove_log",
+      "x": 90
+    }
+  }
+}
