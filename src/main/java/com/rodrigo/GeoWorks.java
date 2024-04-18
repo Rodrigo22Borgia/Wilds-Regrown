@@ -17,5 +17,7 @@ public class GeoWorks implements ModInitializer {
 		GWItems.registerItems();
 		GWBlocks.registerBlocks();
 		CreativeTab.registerItemGroups();
+
+		//This is but a simple test
 	}
 }
