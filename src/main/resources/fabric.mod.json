@@ -1,8 +1,8 @@
 {
 	"schemaVersion": 1,
-	"id": "geoworks",
+	"id": "wildsregrown",
 	"version": "${version}",
-	"name": "GeoWorks",
+	"name": "WildsRegrown",
 	"description": "This is an example description! Tell everyone what your mod is about!",
 	"authors": [
 		"Me!"
@@ -12,23 +12,23 @@
 		"sources": "https://github.com/FabricMC/fabric-example-mod"
 	},
 	"license": "CC0-1.0",
-	"icon": "assets/geoworks/icon.png",
+	"icon": "assets/wildsregrown/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"fabric-datagen": [
-			"com.rodrigo.GeoWorksDataGenerator"
+			"com.rodrigo.WildsRegrownDataGenerator"
 		],
 		"main": [
-			"com.rodrigo.GeoWorks"
+			"com.rodrigo.WildsRegrown"
 		],
 		"client": [
-			"com.rodrigo.GeoWorksClient"
+			"com.rodrigo.WildsRegrownClient"
 		]
 	},
 	"mixins": [
-		"geoworks.mixins.json",
+		"wildsregrown.mixins.json",
 		{
-			"config": "geoworks.client.mixins.json",
+			"config": "wildsregrown.client.mixins.json",
 			"environment": "client"
 		}
 	],

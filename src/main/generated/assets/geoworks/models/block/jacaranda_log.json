@@ -1,7 +1,0 @@
-{
-  "parent": "minecraft:block/cube_column",
-  "textures": {
-    "end": "geoworks:block/jacaranda_log_top",
-    "side": "geoworks:block/jacaranda_log_side"
-  }
-}

@@ -1,7 +1,0 @@
-{
-  "parent": "minecraft:block/cube_column",
-  "textures": {
-    "end": "geoworks:block/mahogany_log_top",
-    "side": "geoworks:block/mahogany_log_side"
-  }
-}

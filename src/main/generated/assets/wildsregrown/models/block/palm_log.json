@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "wildsregrown:block/palm_log_top",
+    "side": "wildsregrown:block/palm_log_side"
+  }
+}

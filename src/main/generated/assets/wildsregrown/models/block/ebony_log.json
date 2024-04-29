@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "wildsregrown:block/ebony_log_top",
+    "side": "wildsregrown:block/ebony_log_side"
+  }
+}

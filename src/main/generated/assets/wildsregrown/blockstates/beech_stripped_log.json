@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "wildsregrown:block/beech_stripped_log",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "wildsregrown:block/beech_stripped_log"
+    },
+    "axis=z": {
+      "model": "wildsregrown:block/beech_stripped_log",
+      "x": 90
+    }
+  }
+}
