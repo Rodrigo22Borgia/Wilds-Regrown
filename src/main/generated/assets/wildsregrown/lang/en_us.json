@@ -55,8 +55,5 @@
   "block.wildsregrown.willow_log": "Willow Log",
   "block.wildsregrown.willow_planks": "Willow Planks",
   "block.wildsregrown.willow_stripped_log": "Willow Stripped Log",
-  "item.wildsregrown.amethyst": "Amethyst",
-  "item.wildsregrown.rock": "Rock",
-  "item.wildsregrown.ruby": "Ruby",
-  "item.wildsregrown.sapphire_cluster": "Sapphire Cluster"
+  "item.wildsregrown.rock": "Rock"
 }

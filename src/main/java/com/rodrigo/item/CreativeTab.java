@@ -1,7 +1,6 @@
 package com.rodrigo.item;
 
 import com.rodrigo.WildsRegrown;
-import com.rodrigo.block.WRBlocks;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 
 import net.minecraft.item.ItemGroup;
@@ -10,11 +9,21 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
+import org.apache.commons.lang3.text.WordUtils;
 
 import static com.rodrigo.WildsRegrown.MOD_ID;
 
 public class CreativeTab {
     public static final ItemGroup GW_TAB = Registry.register(Registries.ITEM_GROUP,
+            new Identifier(MOD_ID, "creative_tab"),
+            FabricItemGroup.builder().displayName(Text.translatable("Wilds Regrown"))
+                    .icon(() -> new ItemStack(WRItems.ROCK)).entries((displayContext, entries) -> {
+                        Registries.BLOCK.forEach(block -> { if (block.getTranslationKey().startsWith("block." + MOD_ID)) {entries.add(block);}});
+                        Registries.ITEM .forEach(item  -> { if (item.getTranslationKey().startsWith("item."  + MOD_ID)) {entries.add(item);}});
+                    }).build());
+
+
+    /*public static final ItemGroup GW_TAB = Registry.register(Registries.ITEM_GROUP,
             new Identifier(MOD_ID, "ruby"),
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.ruby"))
                     .icon(() -> new ItemStack(WRItems.ROCK)).entries((displayContext, entries) -> {
@@ -75,7 +84,7 @@ public class CreativeTab {
                         entries.add(WRBlocks.rosaceae_stripped_log);
                         entries.add(WRBlocks.willow_log);
                         entries.add(WRBlocks.willow_stripped_log);
-                    }).build());
+                    }).build());*/
 
     public static void registerItemGroups() {
         WildsRegrown.LOGGER.info("Registering CreativeTab");
