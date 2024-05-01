@@ -3,7 +3,7 @@
 	"package": "com.rodrigo.mixin",
 	"compatibilityLevel": "JAVA_17",
 	"mixins": [
-		"ExampleMixin"
+		"AxeMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1

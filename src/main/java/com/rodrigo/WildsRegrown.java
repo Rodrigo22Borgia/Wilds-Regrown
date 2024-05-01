@@ -17,7 +17,5 @@ public class WildsRegrown implements ModInitializer {
 		WRItems.registerItems();
 		WRBlocks.registerBlocks();
 		CreativeTab.registerItemGroups();
-
-		//This is but a simple test
 	}
 }

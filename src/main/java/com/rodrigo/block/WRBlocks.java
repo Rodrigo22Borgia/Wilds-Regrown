@@ -1,5 +1,6 @@
 package com.rodrigo.block;
 
+import com.google.common.collect.ImmutableMap;
 import com.rodrigo.WildsRegrown;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
@@ -88,4 +89,5 @@ public class WRBlocks {
     public static void registerBlocks() {
         WildsRegrown.LOGGER.info("Registering blocks");
     }
+    public static final ImmutableMap<Block, Block> STRIPPED = new ImmutableMap.Builder().put(WRBlocks.baobab_log, WRBlocks.baobab_stripped_log).build();
 }
